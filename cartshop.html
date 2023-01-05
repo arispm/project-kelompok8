@@ -6,18 +6,20 @@
   <link href="/dist/output.css" rel="stylesheet">
 </head>
 <body>
-   <!-- Navbar Start -->
-<nav class="bg-slate-400">
+
+
+  <!-- Navbar Start -->
+<nav class="bg-[#c0d6d7]">
     <header class="container mx-auto">
         <div class="flex justify-between items-center py-3">
             <div class="flex">
-                <a href="#"><img src="image/PoM_Logo_Green-01.webp" alt="logokopi" height="50px" width="110px"></a>
+              <img src="https://cdn.shopify.com/s/files/1/1786/7381/files/type-white_f6376a9a-39f4-4396-827e-25364d56abf1_100x.png?v=1613734073" alt="" />
             </div>
             <div>
                 <ul class="flex">
-                    <li class="mx-3"><a href="#">Home</a></li>
+                    <li class="mx-3"><a href="index.html">Home</a></li>
                     <li class="mx-3"><a href="#">All Product</a></li>    
-                    <li class="mx-3"><img src="image/shopping-bag.svg" alt="cart"></li>                
+                    <li class="mx-3"><a href="cartshop.html"><img src="image/icon/shopping-bag.svg" alt="cart"></a></li>                
                 </ul>
             </div>
         </div>
@@ -27,8 +29,96 @@
 
 <!-- Chart Section Start -->
 <section>
-    <h1>Shooping Cart</h1>
+  <div class="bg-white py-24 sm:py-32 lg:py-40">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="sm:text-center">
+        <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl py-5">Shooping Cart</h1>
+      </div>
+    </div>
+    <div class="container mx-auto mt-10">
+      <div class="flex shadow-md my-10">
+        <div class="w-3/4 bg-white px-10 py-10">
+          <div class="flex mt-10 mb-5">
+            <h3 class="font-semibold text-gray-600 text-xs uppercase w-2/5">Product Details</h3>
+            <h3 class="font-semibold text-gray-600 text-xs uppercase w-1/5 text-center">Quantity</h3>
+            <h3 class="font-semibold text-gray-600 text-xs uppercase w-1/5 text-center">Price</h3>
+          </div>
+          <div class="flex items-center hover:bg-gray-100 -mx-8 px-6 py-5">
+            <div class="flex w-2/5"> <!-- product -->
+              <div class="w-20">
+                <img class="h-24" src="image/cupcoffe.jpg" alt="">
+              </div>
+              <div class="flex flex-col justify-between ml-4 flex-grow">
+                <span class="font-bold text-sm">Signature Coffe Cup</span>
+              </div>
+            </div>
+            <div class="flex justify-center w-1/5">
+              <svg class="fill-current w-3" viewBox="0 0 448 512">
+                <a href="#"><img src="image/icon/minus.png" alt="minus"></a>
+              </svg>
+                <input class="mx-3 border text-center w-8" type="text" value="1">
+                <svg class="fill-current w-3" viewBox="0 0 448 512">
+                  <a href="#"><img src="image/icon/plus.png" alt="plus"></a>
+                </svg>
+            </div>
+            <span class="text-center w-1/5 font-semibold text-sm">$10.00</span>
+            <span class="text-center w-1/5 font-semibold text-sm"><a href="#"><img src="image/icon/delete.png" alt="delete"></a></span>
+          </div>
+        </div>
+      </div>
+
+      <div id="summary" class="w-1/4 px-8 py-10 content-center">
+        <h1 class="font-semibold text-2xl border-b pb-8">Order Summary</h1>
+        <div class="flex justify-between mt-10 mb-5">
+          <span class="font-semibold text-sm uppercase">Items 1</span>
+          <span class="font-semibold text-sm">10$</span>
+        </div>
+        <div>
+          <label class="font-medium inline-block mb-3 text-sm uppercase">Shipping</label>
+          <select class="block p-2 text-gray-600 w-full text-sm">
+            <option>Standard shipping - $5</option>
+          </select>
+        </div>
+        <div class="border-t mt-8">
+          <div class="flex font-semibold justify-between py-6 text-sm uppercase">
+            <span>Total cost</span>
+            <span>$15</span>
+          </div>
+          <a href="checkout.html">
+            <button class="bg-[#4B5254] font-semibold hover:bg-slate-600 py-3 text-sm text-white uppercase w-full">Proceed to Checkout</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 <!-- Chart Section End -->
+
+
+<!-- Footer Section Start -->
+
+<footer class="p-4 bg-[#777777] shadow md:px-6 md:py-8">
+  <div class="sm:flex sm:items-center sm:justify-between">
+      <a href="index.html" class="flex items-center mb-4 sm:mb-0">
+        <img src="https://cdn.shopify.com/s/files/1/1786/7381/files/type-white_f6376a9a-39f4-4396-827e-25364d56abf1_100x.png?v=1613734073" alt="" />
+          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-black"></span>
+      </a>
+      <ul class="flex flex-wrap items-center mb-6 text-sm text-black sm:mb-0">
+          <li>
+              <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
+          </li>
+          <li>
+              <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+          </li>
+          <li>
+              <a href="#" class="hover:underline">Contact</a>
+          </li>
+      </ul>
+  </div>
+  <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+  <span class="block text-sm text-black sm:text-center">© 2022 <a href="index.html" class="hover:underline">Port Of Mokha™</a>. All Rights Reserved.
+  </span>
+</footer>
+<!-- Footer Section End -->
 </body>
 </html>
